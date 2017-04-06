@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Soll ich heute Essen bestellen?</title>
+    <style>
+      body {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          font-family: monospace;
+      }
+      p {
+          margin: 0;
+          font-size: 15em;
+          text-align: center;
+      }
+    </style>
+  </head>
+  <body onload="yesOrNo();">
+
+    <p id="paragraph"></p>
+
+
+    <script>
+      function yesOrNo(){
+        var color = "";
+        var paragraph = document.getElementById("paragraph");
+        if (Math.random() < 0.5){
+          document.body.style.background = "lime";
+          paragraph.innerHTML = "Ja";
+        }
+        else {
+          document.body.style.background = "red"
+          paragraph.innerHTML = "Nein";
+        }
+      }
+    </script>
+  </body>
+</html>
