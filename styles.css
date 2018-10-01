@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: monospace;
+    overflow: hidden;
+}
+
+p {
+    margin: 0;
+    font-size: 15rem;
+
+    animation-name: whirl;
+    animation-duration: 1s;
+}
+
+@keyframes whirl {
+    from {
+        font-size: 200rem;
+    }
+
+    to {
+        font-size: 15rem;
+    }
+}
+
+
+a {
+    display: none;
+    position: relative;
+    top: 50rem;
+
+    animation-name: slideup;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    animation-duration: 1s;
+}
+
+@keyframes slideup {
+    to {
+        top: 0;
+    }
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+article {
+    text-align: center;
+}

@@ -1,49 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="Soll ich heute Essen bestellen?" content="Diese Seite entscheidet für dich, ob du heute etwas zu Essen bestellen sollst">
-    <title>Soll ich heute Essen bestellen?</title>
-    <style>
+<head>
+  <meta charset="utf-8">
+  <meta name="Soll ich heute Essen bestellen?" content="Diese Seite entscheidet für dich, ob du heute etwas zu Essen bestellst">
+  <title>Soll ich heute Essen bestellen?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    html, body {
-      margin: 0;
-      height: 100%;
-      font-family: monospace;
-      text-align: center;
-    }
+  <section>
+    <article>
+      <p id="paragraph"></p>
+      <a id="link" href="https://timspitzer.github.io/wassollichheutezuessenbestellen/">Soll ich auch entscheiden was du heute bestellst?</a>
+    </article>
+  </section>
 
-    p {
-      margin: 0;
-      font-size: 15em;
-    }
-
-    a {
-      display: none;
-    }
-    </style>
-  </head>
-  <body onload="yesOrNo();">
-
-    <p id="paragraph"></p>
-    <a id="link" href="https://timspitzer.github.io/wassollichheutezuessenbestellen/">Soll ich auch entscheiden was du heute bestellst?</a>
-
-    <script>
-      function yesOrNo(){
-        let color = "";
-        const paragraph = document.getElementById("paragraph");
-        const link = document.getElementById("link");
-        if (Math.random() < 0.5){
-          document.body.style.background = "lime";
-          paragraph.innerHTML = "Ja";
-          link.style.display = "inline";
-
-        }
-        else {
-          document.body.style.background = "red"
-          paragraph.innerHTML = "Nein";
-        }
-      }
-    </script>
-  </body>
+  <script type="text/javascript" src="main.js"></script>
+</body>
 </html>
